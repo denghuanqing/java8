@@ -7,6 +7,8 @@ import java.util.function.Function;
 /**
  * @author poppy
  * @date 2018/6/26 23:50
+ * 巧用设计模式 改造一系列的判断条件
+ * 类似于策略设计模式  但是策略设计模式最终只会选择一种策略来执行
  */
 public class Test {
     public static void main(String[] args) {
