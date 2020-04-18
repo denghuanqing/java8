@@ -1,5 +1,6 @@
 package com.poppy.juc.thread;
 
+
 public class ObjectLock {
     public static void main(String[] args) throws InterruptedException {
         Object obj = new Object();
@@ -12,6 +13,7 @@ public class ObjectLock {
                 synchronized (obj){
                     System.out.println("t1释放锁");
                     try {
+                        // t1 阻塞，并释放obj锁
                         obj.wait();
                     } catch (InterruptedException e) {
                         e.printStackTrace();
