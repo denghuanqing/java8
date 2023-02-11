@@ -2,6 +2,7 @@ package com.poppy.time;
 
 import java.time.Instant;
 import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 
 /**
  * @author poppy
@@ -43,7 +44,9 @@ public class TimeTest {
          * 比较时间
          * 比较日期
          */
-
+        System.out.println("=======================================");
+        String beginDateTime = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss").format(LocalDateTime.now().plusMonths(-3));
+        System.out.println(beginDateTime);
     }
 
 }
